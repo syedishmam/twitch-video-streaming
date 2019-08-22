@@ -6,7 +6,7 @@ const PageOne = () => {
 }
 
 const PageTwo = () => {
-    return <div>PageTwo</div>
+    return <div>PageTwo <button>Click Me!</button></div>
 }
 
 class App extends React.Component {
