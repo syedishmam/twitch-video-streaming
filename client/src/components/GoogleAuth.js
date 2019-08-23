@@ -22,11 +22,21 @@ class GoogleAuth extends React.Component {
 
     renderAuthButton() {
         if(this.state.isSignedIn === null) { 
-            return <div>Sign In Unverified</div>
+            return null
         } else if(this.state.isSignedIn) {
-            return <div>Signed In</div>
+            return (
+                <button className="ui red google button">
+                    <i className="google icon" />
+                    Sign Out
+                </button>
+            )
         } else {
-            return <div>Not Signed In</div>
+            return (
+                <button className="ui red google button">
+                    <i className="google icon" />
+                    Sign In With Google
+                </button>
+            )
         }
     }
 
