@@ -31,7 +31,7 @@ class StreamCreate extends React.Component {
 
     //When submit button is clicked, function runs and calls action creator which 
     //posts formValues to db.json in localhost:3001
-    onSubmit(formValues) {
+    onSubmit = (formValues) => {
         this.props.createStream(formValues);
     }
 
@@ -67,4 +67,4 @@ const formWrapped = reduxForm({
     validate
 })(StreamCreate); 
 
-export default connect(null, {streamCreate})(formWrapped);
+export default connect(null, {createStream})(formWrapped);
