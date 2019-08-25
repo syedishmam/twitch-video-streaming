@@ -2,6 +2,8 @@ import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 
 class StreamCreate extends React.Component {
+    //If input has been clicked on and then off, and validate() gives error
+    //display the error message
     renderError ({error, touched}) {
         if(touched && error) {
             return (
@@ -39,6 +41,7 @@ class StreamCreate extends React.Component {
     }
 }
 
+//If form is empty return errors in object, otherwise return empty object
 const validate = (formValues) => {
     const errors = {};
 
