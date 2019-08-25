@@ -14,6 +14,7 @@ export const signOut = () => {
     }
 }
 
+//Posts form object of newly created stream when submit button is clicked in StreamCreate.js
 export const createStream = (formValues) => async (dispatch) => {
     streams.post('/streams', formValues);
 }
