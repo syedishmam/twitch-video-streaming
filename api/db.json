@@ -9,6 +9,12 @@
       "title": "Playing the new Call of Duty",
       "description": "Hi! Come watch me try out the new Call of Duty game that just released!",
       "id": 2
+    },
+    {
+      "title": "My Stream",
+      "description": "This stream was created by me",
+      "userId": "113376165852276875537",
+      "id": 3
     }
   ]
 }
