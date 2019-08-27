@@ -26,8 +26,6 @@ class StreamForm extends React.Component {
         )
     }
 
-    //When submit button is clicked, function runs and calls action creator which 
-    //posts formValues to db.json in localhost:3001
     onSubmit = (formValues) => {
         this.props.onSubmit(formValues);
     }
