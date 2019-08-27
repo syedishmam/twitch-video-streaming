@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 import {connect} from 'react-redux';
 
@@ -22,7 +23,7 @@ class StreamEdit extends React.Component {
         return (
             <div>
                 <h3>Edit a Stream</h3>
-                <StreamForm initialValues={{title: 'Title', description: 'Description'}} onSUbmit={this.onSubmit} />
+                <StreamForm initialValues={_.pick(this.props.stream, 'title', 'description')} onSubmit={this.onSubmit} />
             </div>
         )
     }
