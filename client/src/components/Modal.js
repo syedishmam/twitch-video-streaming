@@ -7,7 +7,8 @@
             <div className="ui standard modal visible active">
                 Hello World
             </div>
-        </div>
+        </div>,
+        document.getElementById('#modal')
      );
  }
 
