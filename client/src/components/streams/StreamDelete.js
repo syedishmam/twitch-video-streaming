@@ -1,8 +1,16 @@
 import React from 'react';
+import {connect} from 'react-redux';
+
 import Modal from '../Modal';
 import history from '../../history';
+import {fetchStream} from '../../actions';
 
 class StreamDelete extends React.Component {
+    componentDidMount() {
+        this.props.fetchStream(this.props.match.params.id);
+    }
+
+    //Renders buttons and sends to Modal as props
     renderActions() {
         return (
             <React.Fragment>
@@ -27,4 +35,4 @@ class StreamDelete extends React.Component {
     }
 }
 
-export default StreamDelete;
+export default connect(null, {fetchStream})(StreamDelete);
