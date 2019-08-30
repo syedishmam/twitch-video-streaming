@@ -20,6 +20,7 @@ class StreamDelete extends React.Component {
         );
     } 
 
+    //If stream has not been fetched yet, show generic message
     renderContent() {
         if(!this.props.stream) {
             return 'Are you sure you want to delete this stream?'
@@ -30,14 +31,12 @@ class StreamDelete extends React.Component {
     
     render() {
         return (
-            <div>
                 <Modal 
                     title="Delete Stream" 
                     content={this.renderContent()}
                     actions={this.renderActions()} 
                     onDismiss={() => history.push('/')}
                 />
-            </div>
         );
     }
 }
