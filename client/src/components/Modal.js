@@ -8,7 +8,7 @@
                 Hello World
             </div>
         </div>,
-        document.getElementById('#modal')
+        document.getElementById('modal')
      );
  }
 
